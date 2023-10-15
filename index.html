@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabla de Actividades Diarias</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Tabla de Actividades Diarias</h1>
+        <form id="formulario">
+            <label for="hora">Hora:</label>
+            <input type="text" id="hora" required>
+
+            <label for="actividad">Actividad:</label>
+            <input type="text" id="actividad" required>
+
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" required>
+
+            <button type="button" onclick="agregarActividad()">Agregar Actividad</button>
+        </form>
+
+        <table id="tabla-actividades">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Actividad</th>
+                    <th>Descripción</th>
+                    <th>Realizada</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+                <!-- Las filas de la tabla se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
